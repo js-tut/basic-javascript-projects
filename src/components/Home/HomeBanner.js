@@ -6,7 +6,7 @@ import Background from "./Background"
 const HomeBanner = () => {
   return (
     <Background>
-      <Banner title="basic vanilla javascript projects"></Banner>
+      <Banner title=" vanilla javascript projects"></Banner>
     </Background>
   )
 }
