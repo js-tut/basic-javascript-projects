@@ -19,11 +19,9 @@
 .url {
   position: absolute;
   left: 0;
-  top: 75%;
+  bottom: 0;
   background: var(--primaryColor);
   padding: 0.3rem 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   text-transform: capitalize;
   transition: var(--mainTransition);
 }
