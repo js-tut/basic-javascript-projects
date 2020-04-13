@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import styles from "../../css/projects.module.css"
+
 import Project from "./Project"
-import Title from "../Title"
 
 // projects center
 const query = graphql`
@@ -30,9 +29,12 @@ const Projects = () => {
   } = useStaticQuery(query)
 
   return (
-    <section className={styles.projects}>
-      <Title title="all" subtitle="projects"></Title>
-      <div className={styles.center}>
+    <section className="section">
+      <div className="section-title">
+        <h2>all projects</h2>
+        <div className="underline"></div>
+      </div>
+      <div className="section-center">
         {projects.map(item => {
           return <Project key={item.id} {...item} />
         })}

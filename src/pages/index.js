@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import HomeBanner from "../components/Home/HomeBanner"
-import Projects from "../components/Home/Projects"
+import Projects from "../components/Projects"
 import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="JS Projects"></SEO>
-    <HomeBanner></HomeBanner>
+    <header className="hero">
+      <h1>vanilla javascript projects</h1>
+    </header>
     <Projects />
   </Layout>
 )
