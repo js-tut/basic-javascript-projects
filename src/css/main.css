@@ -11,7 +11,9 @@
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-black: #323330;
-  --clr-yellow: #f0db4f;
+  --clr-yellow: hsl(52, 84%, 63%);
+  --clr-yellow-light: hsl(52, 90%, 74%);
+  --clr-yellow-dark: hsl(52, 100%, 21%);
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
@@ -134,7 +136,7 @@ ul {
   max-width: 1170px;
   margin: 0 auto 2rem auto;
   display: grid;
-  gap: 3rem 1.5rem;
+  gap: 3rem 2rem;
   grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 }
 
@@ -183,10 +185,11 @@ Hero
 */
 .project {
   background: var(--clr-grey-8);
-  border-radius: var(--radius);
   transition: var(--transition);
   box-shadow: var(--light-shadow);
+  border-radius: var(--radius);
 }
+
 .project:hover {
   box-shadow: var(--dark-shadow);
   transform: scale(1.02);
@@ -198,7 +201,11 @@ Hero
 .project-footer {
   padding: 1.25rem 1.5rem;
   text-align: center;
+  background: var(--clr-yellow-light);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 .project-footer h4 {
+  color: var(--clr-yellow-dark);
   margin-bottom: 0;
 }
