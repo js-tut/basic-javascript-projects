@@ -209,3 +209,37 @@ Hero
   color: var(--clr-yellow-dark);
   margin-bottom: 0;
 }
+/* course link */
+.course-link {
+  text-align: center;
+}
+.course-link a {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+
+  letter-spacing: var(--spacing);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  animation: bounce 2s infinite;
+  background: var(--clr-yellow);
+  color: var(--clr-black);
+}
+.course-link a:hover {
+  background: var(--clr-black);
+  color: var(--clr-yellow);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
